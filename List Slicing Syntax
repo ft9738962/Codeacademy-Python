@@ -1,0 +1,1 @@
+list[start:end:stride] #slice list from 'start' to item before 'end' with stride
