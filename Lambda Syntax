@@ -1,0 +1,19 @@
+###If you plan on creating a function you'll use over and over, 
+you're better off using def and giving that function a name.
+###
+
+#Example 1 of lambda
+my_list = range(16)
+print filter(lambda x: x % 3 == 0, my_list)
+
+#Here "lambda x: x % 3 == 0" equals:
+def by_three(x):
+    return x % 3 == 0 #It's why we call lambda an anonymous function
+    
+#Example 2 of lambda
+languages = ["HTML", "JavaScript", "Python", "Ruby"]
+print filter(lambda x: x == 'Python', languages)
+
+#Example 3 of lambda
+squares = [i ** 2 for i in range(1,11)]
+print filter(lambda x: x >= 30 and x <= 70, squares)
