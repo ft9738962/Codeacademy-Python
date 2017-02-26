@@ -1,0 +1,12 @@
+# Iterating items in Dict
+my_dict = {'Name': 'QC', 'Age': 29, 'Gender': 'Male'}
+print my_dict.items()
+
+# Iterating keys and values in Dict
+my_dict = {'Name': 'QC', 'Age': 29, 'Gender': 'Male'}
+print my_dict.keys()
+print my_dict.values()
+
+#Iterating using for and in function
+for key in my_dict:
+    print key, my_dict[key]
