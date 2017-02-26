@@ -1,1 +1,22 @@
+#List Slicing Syntax
 list[start:end:stride] #slice list from 'start' to item before 'end' with stride
+#Example
+l = [i ** 2 for i in range(1, 11)] # Should be [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+print l[2:9:2]
+
+#Example
+to_five = ['A', 'B', 'C', 'D', 'E']
+print to_five[3:] # prints ['D', 'E'] 
+
+print to_five[:2] # prints ['A', 'B']
+
+print to_five[::2] # print ['A', 'C', 'E']
+
+#Reverse go through example
+letters = ['A', 'B', 'C', 'D', 'E']
+print letters[::-1] # prints['E', 'D', 'C', 'B', 'A']
+
+# Example
+to_21 = [i for i in range(1,22)]
+odds = to_21[::2]
+middle_third = to_21[len(to_21)/3: len(to_21)/3 * 2]
